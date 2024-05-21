@@ -33,9 +33,9 @@ Go 采用 goroutine 和通道（channel）的并发模型，通过轻量级线�
 
 ### 【mysql/redis/rabbitmq】
 使用与调优经验
-
 sql调优=业务场景+sql执行分析
-
+* [mysql.md](./mysql.md)
+* [redis.md](./redis.md)
 ### 【网络协议】
 熟悉 tcp/http/websocket 
 
