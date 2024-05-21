@@ -1,8 +1,6 @@
 ## 教程
 
-https://www.wtf.academy/
-
-https://community.dorahacks.io/t/bupt3-01/501
-
-[SQL调优实战总结](https://juejin.cn/post/6931596460119031821)
-[nestjs使用rabbitmq](https://www.jianshu.com/p/d2155cbda199)
+* [区块链基本架构](https://community.dorahacks.io/t/bupt3-01/501)
+* [web3开发教程wtf](https://www.wtf.academy/)
+* [SQL调优实战总结](https://juejin.cn/post/6931596460119031821)
+* [nestjs使用rabbitmq](https://www.jianshu.com/p/d2155cbda199)
