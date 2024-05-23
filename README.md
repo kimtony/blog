@@ -38,6 +38,7 @@ sql调优=业务场景+sql执行分析
 * [redis.md](./redis.md)
 ### 【网络协议】
 熟悉 tcp/http/websocket 
+* [network.md](./network.md)
 
 ### 【docker k8s linux】
 独立部署运维节点
