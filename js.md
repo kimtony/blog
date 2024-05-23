@@ -23,3 +23,40 @@
 * 对象方法：当一个方法被一个对象调用时，this 指向该对象。
 * 构造函数：在构造函数中，this 指向新创建的实例。
 * 箭头函数：箭头函数没有自己的 this，它会捕获其所在上下文的 this 值。
+
+
+### 【es6】
+* 1、箭头函数
+```
+// ES6 箭头函数
+const add = (a, b) => a + b;
+```
+* 2、解构赋值： 允许从数组或对象中提取值，并赋给对应的变量。
+```
+// ES6 解构赋值
+const { name, age } = person;
+const [first, second] = array;
+```
+* 3、模板字符串 支持使用反引号（``）定义多行字符串，并且可以在字符串中插入变量
+```
+// ES6 模板字符串
+const greeting = `Hello, ${name}!`;
+```
+* 4、let 和 const 声明： 引入了块级作用域的变量声明方式，用 let 声明的变量可修改，而用 const 声明的变量是常量
+```
+// ES6 let 和 const 声明
+let count = 10;
+const PI = 3.14;
+```
+* 5、类和继承： 引入了类（class）的概念，提供了更方便的面向对象编程方式。
+```
+// ES6 类和继承
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(this.name + ' makes a noise.');
+  }
+}
+```
