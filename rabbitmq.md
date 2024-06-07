@@ -30,21 +30,20 @@
 ## 运行
 ### 拉取镜像
 ```
-docker pull rabbitmq
+docker pull rabbitmq:3.8
 
-docker run -d --hostname my-rabbit --name rabbit -p 15672:15672 -p 5672:5672 rabbitmq
+docker run -d --hostname my-rabbit --name rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3.8
 ```
 
 ### 启动管理界面
 ```
 docker ps 
-docker exec -it 镜像ID /bin/bash
+docker exec -it rabbit /bin/bash
 
+## 宿主主机
+wget -O rabbitmq_delayed_message_exchange-3.8.0.ez https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.8.0/rabbitmq_delayed_message_exchange-3.8.0.ez
 
-apt-get update
-apt-get install -y wget
-wget -O /plugins/rabbitmq_delayed_message_exchange-3.8.0.ez https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.8.0/rabbitmq_delayed_message_exchange-3.8.0.ez
-
+docker cp rabbitmq_delayed_message_exchange-3.8.0.ez rabbit:/plugins/
 
 ## 开启插件
 rabbitmq-plugins enable rabbitmq_management  rabbitmq_delayed_message_exchange
