@@ -39,7 +39,15 @@ docker run -d --hostname my-rabbit --name rabbit -p 15672:15672 -p 5672:5672 rab
 ```
 docker ps 
 docker exec -it 镜像ID /bin/bash
-rabbitmq-plugins enable rabbitmq_management
+
+
+apt-get update
+apt-get install -y wget
+wget -O /plugins/rabbitmq_delayed_message_exchange-3.8.0.ez https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.8.0/rabbitmq_delayed_message_exchange-3.8.0.ez
+
+
+## 开启插件
+rabbitmq-plugins enable rabbitmq_management  rabbitmq_delayed_message_exchange
 ```
 
 ### 访问地址
