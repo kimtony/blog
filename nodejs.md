@@ -49,7 +49,6 @@ promise
 
 >扩展阅读: 在NodeJS中使用libuv实现了Event Loop.
 >源码地址: https://github.com/libuv/libuv
->别看了C/C++语言写的, 你现在看不懂
 
 2.NodeJS事件环和浏览器事件环区别
 2.1任务队列个数不同
